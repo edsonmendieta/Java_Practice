@@ -4,7 +4,7 @@ The longest name should be printed with its first letter capitalized and all sub
 
 Solution:
 
-```java
+```Java
 
 public static void longestName(Scanner console, int n) {
     
