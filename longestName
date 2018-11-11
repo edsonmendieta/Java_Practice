@@ -4,7 +4,7 @@ The longest name should be printed with its first letter capitalized and all sub
 
 Solution:
 
-public static void longestName(Scanner console, int n) {
+```public static void longestName(Scanner console, int n) {
     
     String currentLongest = "";
     
@@ -38,3 +38,4 @@ public static void longestName(Scanner console, int n) {
     
     
 } // method end
+```
