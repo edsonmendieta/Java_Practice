@@ -1,0 +1,10 @@
+Instructions:
+
+Write a println statement that produces the following output:
+
+/ \ // \\ /// \\\
+
+
+Solution:
+
+System.out.println("/ \\ // \\\\ /// \\\\\\");
