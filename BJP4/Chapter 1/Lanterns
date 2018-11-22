@@ -1,0 +1,83 @@
+Instructions:
+
+Write a complete Java program in a class named Lanterns that generates the following three figures of output. Use static methods to show structure and eliminate redundancy in your solution.
+
+In particular, make sure that main contains no System.out.println statements except for blank lines, that any System.out.println statement(s) repeated are captured in a method that is called just once, and that the same System.out.println statement never appears in two places in the code.
+
+    *****
+  *********
+*************
+
+    *****
+  *********
+*************
+* | | | | | *
+*************
+    *****
+  *********
+*************
+
+    *****
+  *********
+*************
+    *****
+* | | | | | *
+* | | | | | *
+    *****
+    *****
+    
+    
+    
+    Solution:
+    
+    public class Lanterns {
+
+    
+        public static void main(String[] args) {
+            tripleLayerStarStack();
+            System.out.println();
+            tripleLayerStarStack();
+            starColumnLine();
+            longStarLine();
+            tripleLayerStarStack();
+            System.out.println();
+            tripleLayerStarStack();
+            shortStarLine();
+            starColumnLineDouble();
+            shortStarStack();
+        }
+    
+    
+        public static void shortStarLine() {
+            System.out.println("    *****");
+        }
+    
+        public static void mediumStarLine() {
+            System.out.println("  *********");
+        }
+    
+        public static void longStarLine() {
+            System.out.println("*************");
+        }
+    
+        public static void shortStarStack() {
+            shortStarLine();
+            shortStarLine();
+        }
+    
+        public static void tripleLayerStarStack() {
+            shortStarLine();
+            mediumStarLine();
+            longStarLine();
+        }
+    
+        public static void starColumnLine() {
+            System.out.println("* | | | | | *");
+        }
+    
+        public static void starColumnLineDouble() {
+            starColumnLine();
+            starColumnLine();
+        }
+    
+}
