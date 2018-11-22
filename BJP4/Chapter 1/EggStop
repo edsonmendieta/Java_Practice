@@ -1,0 +1,72 @@
+Instructions:
+
+Write a complete Java program in a class named EggStop that generates the following output. Use static methods to show structure and eliminate redundancy in your solution.
+
+  ______
+ /      \
+/        \
+\        /
+ \______/
+
+  ______
+ /      \
+/        \
+\        /
+ \______/
++--------+
+
+  ______
+ /      \
+/        \
+|  STOP  |
+\        /
+ \______/
++--------+
+
+
+Solution:
+
+public class EggStop {
+
+    public static void main(String[] args) {
+        eggWhole();
+        System.out.println();
+        eggWhole();
+        plusLine();
+        System.out.println();
+        eggTop();
+        stopLine();
+        eggBottomPlusLine();
+    }
+    
+    
+    public static void eggTop() {
+        System.out.println("  ______");
+        System.out.println(" /      \\");
+        System.out.println("/        \\");
+    }
+    
+    public static void eggBottom() {
+        System.out.println("\\        /");
+        System.out.println(" \\______/");
+    }
+    
+    public static void stopLine() {
+        System.out.println("|  STOP  |");
+    }
+    
+    public static void plusLine() {
+        System.out.println("+--------+");
+    }
+    
+    public static void eggWhole() {
+        eggTop();
+        eggBottom();
+    }
+    
+    public static void eggBottomPlusLine() {
+        eggBottom();
+        plusLine();
+    }
+
+}
