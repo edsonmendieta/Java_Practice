@@ -1,0 +1,60 @@
+Instructions:
+
+Write a program in a class named Shining that prints the following line of output 1000 times:
+
+All work and no play makes Jack a dull boy.
+You should not write a program whose source code is 1000 lines long; use methods to shorten the program. What is the shortest program you can write that will produce the 1000 lines of output, using only the material from Chapter 1 (println, methods, etc.)?
+
+
+
+Solution:
+
+public class Shining {
+
+
+    public static void main(String[] args) {
+        shiningLine1000();
+    }
+    
+    
+    public static void shiningLine() {
+        System.out.println("All work and no play makes Jack a dull boy.");
+    }
+    
+    public static void shiningLine5() {
+        shiningLine();
+        shiningLine();
+        shiningLine();
+        shiningLine();
+        shiningLine();
+    }
+    
+    public static void shiningLine25() {
+        shiningLine5();
+        shiningLine5();
+        shiningLine5();
+        shiningLine5();
+        shiningLine5();
+    }
+    
+    public static void shiningLine100() {
+        shiningLine25();
+        shiningLine25();
+        shiningLine25();
+        shiningLine25();
+    }
+    
+    public static void shiningLine500() {
+        shiningLine100();
+        shiningLine100();
+        shiningLine100();
+        shiningLine100();
+        shiningLine100();
+    }
+    
+    public static void shiningLine1000() {
+        shiningLine500();
+        shiningLine500();
+    }
+
+}
