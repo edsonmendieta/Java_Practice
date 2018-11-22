@@ -1,0 +1,69 @@
+Instructions:
+
+Write a complete Java program in a class named StarFigures that generates the following output. Use static methods to show structure and eliminate redundancy in your solution.
+
+*****
+*****
+ * *
+  *
+ * *
+
+*****
+*****
+ * *
+  *
+ * *
+*****
+*****
+
+  *
+  *
+  *
+*****
+*****
+ * *
+  *
+ * *
+ 
+ 
+ 
+ Solution:
+ 
+ public class StarFigures {
+
+    public static void main(String[] args) {
+        starStackX();
+        System.out.println();
+        starStackX();
+        starLineStack();
+        System.out.println();
+        threeStarStack();
+        starStackX();
+        
+    }
+    
+    
+    
+    public static void starLineStack() {
+        System.out.println("*****");
+        System.out.println("*****");
+    }
+    
+    public static void starX() {
+        System.out.println(" * *");
+        System.out.println("  *");
+        System.out.println(" * *");
+    }
+    
+    public static void threeStarStack() {
+        System.out.println("  *");
+        System.out.println("  *");
+        System.out.println("  *");
+    }
+    
+    public static void starStackX() {
+        starLineStack();
+        starX();
+    }
+
+}
