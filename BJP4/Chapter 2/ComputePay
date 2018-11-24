@@ -1,0 +1,29 @@
+Instructions:
+
+The following program redundantly repeats the same expressions many times. Modify the program to remove all redundant expressions using variables of appropriate types. (Your variables should be used to help solve the overall problem. You must use a sufficient number of variables to receive credit for solving this problem. Declare and initialize each variable in its own statement on its own line.)
+
+
+
+Solution:
+
+public class ComputePay {
+    public static void main(String[] args) {
+        // Calculate pay at work based on hours worked each day
+        int totalHoursWorked = 4 + 5 + 8 + 4;
+        double hourlySalary = 8.75;
+        double tax = 0.20;
+        String total = "My total ";
+        
+        System.out.println(total + "hours worked:");
+        System.out.println(totalHoursWorked);
+
+        System.out.println("My hourly salary:");
+        System.out.println("$" + hourlySalary);
+
+        System.out.println(total + "pay:");
+        System.out.println((totalHoursWorked) * hourlySalary);
+
+        System.out.println("My taxes owed:"); // 20% tax
+        System.out.println((totalHoursWorked) * hourlySalary * tax);
+    }
+}
