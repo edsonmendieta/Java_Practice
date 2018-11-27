@@ -1,0 +1,18 @@
+Instructions:
+
+Write for loops to produce the following output:
+
+*****
+*****
+*****
+*****
+
+
+Solution:
+
+for (int i = 1; i <= 4; i++) {
+    for (int z = 1; z <= 5; z++) {
+        System.out.print("*");
+    }
+    System.out.println();
+}
