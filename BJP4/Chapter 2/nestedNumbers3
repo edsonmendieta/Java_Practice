@@ -1,0 +1,26 @@
+Instructions:
+
+Modify your code from the previous problem to produce the following output:
+
+
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+999999999888888887777777666666555554444333221
+
+
+Solution:
+
+for (int i = 1; i <= 4; i++) {
+
+    for (int k = 9; k >= 0; k--) {
+        
+        for (int z = 1; z <= k; z++) {
+            System.out.print(k);
+        }
+        
+    }
+    
+    System.out.println();
+
+}
