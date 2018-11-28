@@ -1,0 +1,26 @@
+Instructions:
+
+Write nested for loops that produce the following output:
+
+
+000111222333444555666777888999
+000111222333444555666777888999
+000111222333444555666777888999
+
+
+
+Solution:
+
+for (int i = 1; i <= 3; i++) {
+
+    for (int k = 0; k <= 9; k++) {
+        
+        for (int z = 1; z <= 3; z++) {
+            System.out.print(k);
+        }
+        
+    }
+    
+    System.out.println();
+
+}
