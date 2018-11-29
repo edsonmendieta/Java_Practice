@@ -1,0 +1,29 @@
+Instructions:
+
+Write a method called printDesign that produces the following output. Use nested for loops to capture the structure of the figure.
+
+-----1-----
+----333----
+---55555---
+--7777777--
+-999999999-
+
+
+
+Solution:
+
+public static void printDesign() {
+    // your code goes here
+        for (int j = 1; j < 11; j += 2) {
+            for (int k = 1; k <= (11 - j) / 2; k++) {
+                System.out.print("-");
+            }
+            for (int l = 1; l <= j; l++) {
+                System.out.print(j);
+            }
+            for (int k = 1; k <= (11 - j) / 2; k++) {
+                System.out.print("-");
+            }
+            System.out.println();
+        }
+}
