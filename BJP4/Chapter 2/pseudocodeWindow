@@ -1,0 +1,22 @@
+Instructions:
+
+Write a pseudocode algorithm that will produce the following figure as output:
+
++===+===+
+|   |   |
+|   |   |
+|   |   |
++===+===+
+|   |   |
+|   |   |
+|   |   |
++===+===+
+
+
+Solution:
+
+1. Print "+===+===+"
+2. Print "|   |   |" 3x
+3. Repeat step 1.
+4. Repeat step 2.
+5. Repeat step 1.
