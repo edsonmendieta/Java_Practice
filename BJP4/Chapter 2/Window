@@ -19,19 +19,44 @@ Solution:
 
 public class Window {
     
+    public static final int SIZE = 3;
+    
     public static void main(String[] args) {
         windowMethod();
     }
     
     public static void windowMethod() {
+        
         for (int i = 1; i <= 2; i++) {
-            System.out.println("+===+===+");
-            for (int j = 1; j <= 3; j++) {
-                System.out.print("|   |   |");
-                System.out.println();
-            }
-        }
-        System.out.println("+===+===+");
-    } // end of windowMethod()
+            for(int r = 1; r <= 2; r++) {
+                System.out.print("+");
+				for (int p = 1; p <= SIZE; p++) {
+                    System.out.print("=");
+				}
+			} // frame
+            
+			System.out.println("+");
+
+            for (int y = 1; y <= SIZE; y++) {
+                for (int j = 1; j <= 2; j++) {
+                    System.out.print("|");
+					for (int k = 1; k <= SIZE; k++) {
+                        System.out.print(" ");
+					}
+				}
+				System.out.println("|");
+			}
+
+        } //outermost loop
+        
+		for(int r = 1; r <= 2; r++) {
+            System.out.print("+");
+			for (int p = 1; p <= SIZE; p++) {
+                System.out.print("=");
+			}
+		} // bottommost frame
+		System.out.println("+");
+        
+	} // end of windowMethod()
     
 }
