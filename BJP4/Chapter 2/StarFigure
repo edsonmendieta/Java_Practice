@@ -1,0 +1,42 @@
+Instructions:
+
+Write a program in a class named StarFigure that produces the following output using for loops.
+
+////////////////\\\\\\\\\\\\\\\\
+////////////********\\\\\\\\\\\\
+////////****************\\\\\\\\
+////************************\\\\
+********************************
+
+
+
+Solution:
+
+public class StarFigure {
+    
+    public static void main(String[] args) {
+        patternMethod();
+    }
+    
+    
+    public static void patternMethod() {
+        
+        for (int i = 0; i < 5; i++) {
+        
+            for (int k = 1; k <= (32 - 8 * i) / 2; k++) {
+                System.out.print("/");
+            } // forward slash - loop
+            
+            for (int j = 1; j <= 8 * i; j++) {
+                System.out.print("*");
+            } // star-loop
+            
+            for (int m = 1; m <= (32 - 8 * i) / 2; m++) {
+                System.out.print("\\");
+            }
+            
+            System.out.println();
+        }
+        
+    } // end of patternMethod()
+}
