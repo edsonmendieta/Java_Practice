@@ -17,3 +17,38 @@ size 6
 ****************************************
 
 (You must solve this problem using only ONE public static final constant, not multiple constants; and its value must be used in the way described in this problem.)
+
+
+
+Solution:
+
+public class StarFigure2 {
+    
+    public static final int SIZE = 3;
+    
+    public static void main(String[] args) {
+        patternMethod();
+    }
+    
+    
+    public static void patternMethod() {
+        
+        for (int i = 0; i < SIZE; i++) {
+        
+            for (int k = 1; k <= ((SIZE - 1) * 8 - 8 * i) / 2; k++) {
+                System.out.print("/");
+            } // forward slash - loop
+            
+            for (int j = 1; j <= 8 * i; j++) {
+                System.out.print("*");
+            } // star-loop
+            
+            for (int m = 1; m <= ((SIZE - 1) * 8 - 8 * i) / 2; m++) {
+                System.out.print("\\");
+            }
+            
+            System.out.println();
+        }
+        
+    } // end of patternMethod()
+}
