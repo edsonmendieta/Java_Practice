@@ -1,6 +1,6 @@
 public class AsciiArt {
 
-   public static final int SIZE = 7;
+   public static final int SIZE = 3;
    
    public static void main(String[] args) {
       tip();
@@ -69,10 +69,18 @@ public class AsciiArt {
    
    public static void midSection() {
       for (int i = 1; i <= SIZE * SIZE; i++) {
-         for (int j = 1; j <= 6 * (SIZE - 1) + 4; j++) {
+         for (int j = 1; j <= 6 * (SIZE - 1) + 6 - (SIZE - 2); j++) {
             System.out.print(" ");
          }//Left-side-spaces
-         System.out.print("|%%| |%%|");
+         System.out.print("|");
+         for (int k = 1; k <= (SIZE * 2 - 4) / 2; k++) {
+            System.out.print("%");
+         }//Left-side-%
+         System.out.print("| |");
+         for (int k = 1; k <= (SIZE * 2 - 4) / 2; k++) {
+            System.out.print("%");
+         }//Right-side-%
+         System.out.print("|");
          System.out.println();
       }//outermost-loop
    }
