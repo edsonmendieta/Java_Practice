@@ -6,6 +6,7 @@ public class AsciiArt {
       lidQuotes();
       lidBottom();
       tip();
+      midSection();
    }
    
    
@@ -66,6 +67,16 @@ public class AsciiArt {
          System.out.print("\\___/");
          System.out.println();
       }//outer-most-loop
-   }//end-of-lidBottom
+   }//end-of-lidBottom()
+   
+   public static void midSection() {
+      for (int i = 1; i <= 4 * 4; i++) {
+         for (int j = 1; j <= 6 * (4 - 1) + 4; j++) {
+            System.out.print(" ");
+         }//Left-side-spaces
+         System.out.print("|%%| |%%|");
+         System.out.println();
+      }//outermost-loop
+   }
    
 }//END-of-CLASS
