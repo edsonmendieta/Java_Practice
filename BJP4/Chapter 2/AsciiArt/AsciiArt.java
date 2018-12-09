@@ -5,6 +5,7 @@ public class AsciiArt {
       lidTop();
       lidQuotes();
       lidBottom();
+      tip();
    }
    
    
