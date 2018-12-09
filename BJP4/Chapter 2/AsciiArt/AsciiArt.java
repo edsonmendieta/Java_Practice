@@ -4,13 +4,11 @@ public class AsciiArt {
    
    public static void main(String[] args) {
       tip();
-      lidTop();
-      lidQuotes();
+      totalTop();
       lidBottom();
       tip();
       midSection();
-      lidTop();
-      lidQuotes();
+      totalTop();
    }
    
    
@@ -83,6 +81,13 @@ public class AsciiArt {
          System.out.print("|");
          System.out.println();
       }//outermost-loop
+   }//end-of-midSection();
+   
+   
+   
+   public static void totalTop() {
+      lidTop();
+      lidQuotes();
    }
    
 }//END-of-CLASS
