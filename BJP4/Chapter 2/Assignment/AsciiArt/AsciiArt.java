@@ -2,7 +2,9 @@ public class AsciiArt {
    
    public static void main(String[] args) {
       tip();
-      upperLid();
+      lidTop();
+      lidQuotes();
+      lidBottom();
    }
    
    
@@ -19,7 +21,7 @@ public class AsciiArt {
       }
    }//end-of-tip()
    
-   public static void upperLid() {
+   public static void lidTop() {
       for (int i = 1; i <= 4; i++) {
          for (int j = 1; j <= 6 * (4 - i); j++) {
             System.out.print(" ");
@@ -40,6 +42,29 @@ public class AsciiArt {
          }//Right-side-spaces
          System.out.println();
       }//outer-most-line-loop
-   }//end-of-uppperLid()
+   }//end-of-lidTop()
+   
+   public static void lidQuotes() {
+      System.out.print(" | ");
+      for (int i = 1; i <= 3 * (4 - 1) * 2 + 6; i++) {
+         System.out.print("\" ");
+      }
+      System.out.print("| ");
+      System.out.println();
+   }//end-of-lidQuotes()
+   
+   public static void lidBottom() {
+      for (int i = 1; i <= 4; i++) {
+         for (int k = 1; k <= (i - 1) * 4; k++) {
+            System.out.print(" ");
+         }//initial-spaces
+         System.out.print(" \\___/ ");
+         for (int j = 1; j <= i * -2 + 12; j++) {
+            System.out.print("\\ / ");
+         }//inner-slash-pairs
+         System.out.print("\\___/");
+         System.out.println();
+      }//outer-most-loop
+   }//end-of-lidBottom
    
 }//END-of-CLASS
