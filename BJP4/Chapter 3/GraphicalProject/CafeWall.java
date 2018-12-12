@@ -1,4 +1,4 @@
-import java.awt.*;
+import java.awt.*; // Test to see if it works------
 
 public class CafeWall {
 
@@ -12,13 +12,13 @@ public class CafeWall {
    }
    
    
-   public static void drawPair(Graphics g, int x, int y, int boxSize) {
+   public static void drawPair(Graphics g, int x, int y, int count int boxSize) {
    
       g.setColor(Color.BLACK);
-      g.fillRect(x, y, boxSize, boxSize);
+      g.fillRect(x + boxSize * count, y, boxSize, boxSize);// draws black square
       g.setColor(Color.WHITE);
-      g.drawLine(x, y, x + boxSize, y + boxSize);
-      g.drawLine(x, y + boxSize, x + boxSize, y);
+      g.drawLine(x + boxSize * count, y, x + boxSize * count + boxSize, y + boxSize); // line-from-upper-left
+      g.drawLine(x + boxSize * count, y + boxSize, x + boxSize * count + boxSize, y); // line-from-bottom-left
       
       g.setColor(Color.WHITE);
       g.fillRect(x + boxSize, y, boxSize, boxSize);
@@ -28,7 +28,9 @@ public class CafeWall {
    
    public static void drawRow(Graphics g, int x, int y, int boxPairs, int boxSize) {
    
-      drawPair(g, x, y, boxSize);
+      for (int i = 0; i < boxPairs; i++) {
+         drawPair(g, x, y, i, boxSize);
+      }
       
    }// drawRow()
    
