@@ -14,6 +14,7 @@ public class CafeWall {
    
    
    public static void drawPair(Graphics g, int x, int y, int count, int boxSize) {
+   // draws a single black and white box pair
    
       int xPosition = x + boxSize * count * 2;
    
@@ -30,6 +31,7 @@ public class CafeWall {
    
    
    public static void drawRow(Graphics g, int x, int y, int boxPairs, int boxSize) {
+   // draws a row of black and white box pairs according to inputed parameters
    
       for (int i = 0; i < boxPairs; i++) {
          drawPair(g, x, y, i, boxSize);
