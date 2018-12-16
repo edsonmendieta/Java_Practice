@@ -14,15 +14,16 @@ public class CafeWall {
    
    public static void drawPair(Graphics g, int x, int y, int count, int boxSize) {
    
+      int xPosition = x + boxSize * count * 2;
    
       g.setColor(Color.BLACK);
-      g.fillRect(x + boxSize * count * 2, y, boxSize, boxSize);// draws black square
+      g.fillRect(xPosition, y, boxSize, boxSize);// draws black square
       g.setColor(Color.WHITE);
       
-      g.drawLine(x + boxSize * count * 2, y, x + boxSize * count * 2 + boxSize, y + boxSize); // line-from-upper-left
-      g.drawLine(x + boxSize * count * 2, y + boxSize, x + boxSize * count * 2 + boxSize, y); // line-from-bottom-left
+      g.drawLine(xPosition, y, xPosition + boxSize, y + boxSize); // line-from-upper-left
+      g.drawLine(xPosition, y + boxSize, xPosition + boxSize, y); // line-from-bottom-left
       
-      g.fillRect(x + boxSize * count * 2 + boxSize, y, boxSize, boxSize); // draws white square
+      g.fillRect(xPosition + boxSize, y, boxSize, boxSize); // draws white square
 
    }// drawPair()
    
