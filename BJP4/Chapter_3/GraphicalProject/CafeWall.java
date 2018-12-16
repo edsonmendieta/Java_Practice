@@ -8,20 +8,21 @@ public class CafeWall {
       canvas.setBackground(Color.GRAY);
       Graphics g = canvas.getGraphics();
       
-      drawRow(g, 0, 0, 1, 20);
+      drawRow(g, 0, 0, 4, 20);
    }
    
    
-   public static void drawPair(Graphics g, int x, int y, int count int boxSize) {
+   public static void drawPair(Graphics g, int x, int y, int count, int boxSize) {
+   
    
       g.setColor(Color.BLACK);
-      g.fillRect(x + boxSize * count, y, boxSize, boxSize);// draws black square
+      g.fillRect(x + boxSize * count * 2, y, boxSize, boxSize);// draws black square
       g.setColor(Color.WHITE);
-      g.drawLine(x + boxSize * count, y, x + boxSize * count + boxSize, y + boxSize); // line-from-upper-left
-      g.drawLine(x + boxSize * count, y + boxSize, x + boxSize * count + boxSize, y); // line-from-bottom-left
       
-      g.setColor(Color.WHITE);
-      g.fillRect(x + boxSize, y, boxSize, boxSize);
+      g.drawLine(x + boxSize * count * 2, y, x + boxSize * count * 2 + boxSize, y + boxSize); // line-from-upper-left
+      g.drawLine(x + boxSize * count * 2, y + boxSize, x + boxSize * count * 2 + boxSize, y); // line-from-bottom-left
+      
+      g.fillRect(x + boxSize * count * 2 + boxSize, y, boxSize, boxSize); // draws white square
 
    }// drawPair()
    
@@ -33,5 +34,6 @@ public class CafeWall {
       }
       
    }// drawRow()
+   
    
 }// end-of-program
