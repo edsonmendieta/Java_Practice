@@ -9,6 +9,7 @@ public class CafeWall {
       Graphics g = canvas.getGraphics();
       
       drawRow(g, 0, 0, 4, 20);
+      drawRow(g, 50, 70, 5, 30);
    }
    
    
@@ -17,7 +18,7 @@ public class CafeWall {
       int xPosition = x + boxSize * count * 2;
    
       g.setColor(Color.BLACK);
-      g.fillRect(xPosition, y, boxSize, boxSize);// draws black square
+      g.fillRect(xPosition, y, boxSize, boxSize); // draws black square
       g.setColor(Color.WHITE);
       
       g.drawLine(xPosition, y, xPosition + boxSize, y + boxSize); // line-from-upper-left
@@ -25,7 +26,7 @@ public class CafeWall {
       
       g.fillRect(xPosition + boxSize, y, boxSize, boxSize); // draws white square
 
-   }// drawPair()
+   } // drawPair()
    
    
    public static void drawRow(Graphics g, int x, int y, int boxPairs, int boxSize) {
@@ -34,7 +35,7 @@ public class CafeWall {
          drawPair(g, x, y, i, boxSize);
       }
       
-   }// drawRow()
+   } // drawRow()
    
    
-}// end-of-program
+} // end-of-program
