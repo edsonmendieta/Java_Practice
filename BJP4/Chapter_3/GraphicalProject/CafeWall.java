@@ -2,6 +2,8 @@ import java.awt.*; // Test to see if it works------
 
 public class CafeWall {
 
+   public static final int MORTAR = 2; // pixels of seperation between rows
+
    public static void main(String[] args) {
    
       DrawingPanel canvas = new DrawingPanel (650, 400);
@@ -51,9 +53,9 @@ public class CafeWall {
       
       for (int i = 1; i <= rowPairs; i++) { // Draws a pair of rows. 2nd one is offset.
          drawRow(g, x, currentY, boxPairs, boxSize);
-         currentY += boxSize; // moves pen down 
+         currentY += boxSize + MORTAR; // moves pen down 
          drawRow(g, x + offset, currentY, boxPairs, boxSize); // offset row
-         currentY += boxSize; // moves pen down
+         currentY += boxSize + MORTAR; // moves pen down
       }
    
    } // drawGrid()
