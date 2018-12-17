@@ -49,7 +49,7 @@ public class CafeWall { // Uses Graphics object to draw the cafe wall illusiion.
    
    
    public static void drawGrid(Graphics g, int x, int y, int boxPairs, int rowPairs, int boxSize, int offset) {
-      
+   // draws a grid of box pair rows according to inputed parameters
       int currentY = y; // tracks y position
       
       for (int i = 1; i <= rowPairs; i++) { // Draws a pair of rows. 2nd one is offset.
