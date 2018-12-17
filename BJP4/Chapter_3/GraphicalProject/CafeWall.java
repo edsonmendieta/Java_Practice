@@ -13,6 +13,8 @@ public class CafeWall {
       
       drawGrid(g, 400, 20, 2, 2, 35, 35);
       drawGrid(g, 10, 150, 4, 4, 25, 0);
+      drawGrid(g, 250, 200, 3, 3, 25, 10);
+      drawGrid(g, 425, 180, 5, 5, 20, 10);
    }
    
    
