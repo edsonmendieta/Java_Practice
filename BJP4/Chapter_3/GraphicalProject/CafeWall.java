@@ -10,6 +10,9 @@ public class CafeWall {
       
       drawRow(g, 0, 0, 4, 20);
       drawRow(g, 50, 70, 5, 30);
+      
+      drawGrid(g, 400, 20, 2, 2, 35, 35);
+      drawGrid(g, 10, 150, 4, 4, 25, 0);
    }
    
    
@@ -38,6 +41,20 @@ public class CafeWall {
       }
       
    } // drawRow()
+   
+   
+   public static void drawGrid(Graphics g, int x, int y, int boxPairs, int rowPairs, int boxSize, int offset) {
+      
+      int currentY = y; // tracks y position
+      
+      for (int i = 1; i <= rowPairs; i++) { // Draws a pair of rows. 2nd one is offset.
+         drawRow(g, x, currentY, boxPairs, boxSize);
+         currentY += boxSize; // moves pen down 
+         drawRow(g, x + offset, currentY, boxPairs, boxSize); // offset row
+         currentY += boxSize; // moves pen down
+      }
+   
+   } // drawGrid()
    
    
 } // end-of-program
