@@ -1,6 +1,6 @@
-import java.awt.*; // Test to see if it works------
+import java.awt.*;
 
-public class CafeWall {
+public class CafeWall { // Uses Graphics object to draw the cafe wall illusiion.
 
    public static final int MORTAR = 2; // pixels of seperation between rows
 
@@ -27,11 +27,12 @@ public class CafeWall {
    
       g.setColor(Color.BLACK);
       g.fillRect(xPosition, y, boxSize, boxSize); // draws black square
-      g.setColor(Color.WHITE);
+      g.setColor(Color.BLUE);
       
       g.drawLine(xPosition, y, xPosition + boxSize, y + boxSize); // line-from-upper-left
       g.drawLine(xPosition, y + boxSize, xPosition + boxSize, y); // line-from-bottom-left
       
+      g.setColor(Color.WHITE);
       g.fillRect(xPosition + boxSize, y, boxSize, boxSize); // draws white square
 
    } // drawPair()
