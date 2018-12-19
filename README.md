@@ -1,2 +1,2 @@
-# Java_Practice_Solutions
+# Java_Practice
 Solutions to various practice problems in Java
