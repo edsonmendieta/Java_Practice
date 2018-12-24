@@ -1,4 +1,5 @@
-public class PrintSquare {
+public class PrintSquare { 
+// prints (inclusive) all #'s from a min to a max, shifting them left 1 place each time.
 
    public static void main(String[] args) {
       printSquare1(1, 5);
