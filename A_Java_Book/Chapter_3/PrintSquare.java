@@ -1,7 +1,11 @@
 public class PrintSquare {
 
    public static void main(String[] args) {
+      printSquare1(1, 5);
       printSquare1(3, 9);
+      printSquare1(0, 3);
+      printSquare1(5, 5);
+      printSquare1(0, 10);
    }
    
    public static void printSquare1(int min, int max) {
