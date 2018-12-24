@@ -1,4 +1,6 @@
 public class PrintPowersOfN {
+// takes user inputted base & exponent and prints out successive power products
+
    public class void main(String[] args) {
    printPowersofN1(4, 3);
    printPowersofN1(-6, 0);
