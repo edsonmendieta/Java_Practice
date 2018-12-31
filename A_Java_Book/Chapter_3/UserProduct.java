@@ -1,4 +1,5 @@
 public class UserProduct {
+// asks user for a total, and then asks for a number 'total' times, then returns cumulative product
 
    public static void main(String[] arg) {
       Scanner console = new Scanner(System.in);
