@@ -26,7 +26,8 @@ public class CardChoice {
       }
       
       
-      if (cardRank.charAt(0) == 'J') {
+      
+      if (cardRank.charAt(0) == 'J') { // determines Rank of user's card
          cardRank = "Jack";
       } else if (cardRank.charAt(0) == 'Q') {
          cardRank = "Queen";
@@ -34,9 +35,29 @@ public class CardChoice {
          cardRank = "King";
       } else if (cardRank.charAt(0) == 'A') {
          cardRank = "Ace";
+      } else if (cardRank.charAt(0) == '1' && cardRank.length() == 1) {
+          cardRank = "One";
+      } else if (cardRank.charAt(0) == '2') {
+          cardRank = "Two";
+      } else if (cardRank.charAt(0) == '3') {
+          cardRank = "Three";
+      } else if (cardRank.charAt(0) == '4') {
+          cardRank = "Four";
+      } else if (cardRank.charAt(0) == '5') {
+          cardRank = "Five";
+      } else if (cardRank.charAt(0) == '6') {
+          cardRank = "Six";
+      } else if (cardRank.charAt(0) == '7') {
+          cardRank = "Seven";
+      } else if (cardRank.charAt(0) == '8') {
+          cardRank = "Eight";
+      } else if (cardRank.charAt(0) == '9') {
+          cardRank = "Nine";
+      } else if (cardRank.charAt(0) == '1') {
+          cardRank = "Ten";
       }
       
-      if (userSuit.charAt(0) == 'C') {
+      if (userSuit.charAt(0) == 'C') { // determines suit of user card
          cardSuit = "Clubs";
       } else if (userSuit.charAt(0) == 'D') {
          cardSuit = "Diamonds";
